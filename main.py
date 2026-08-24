@@ -54,7 +54,7 @@ def format_phone_number(phone):
 def format_username(username):
     if is_phone_number(username):
         return format_phone_number(username)
-        n = len(username)
+    n = len(username)
     if n <= 2:
         return username
     hide_rules = {3:1,4:2,5:3,6:2,7:3,8:4,9:3,10:4}
